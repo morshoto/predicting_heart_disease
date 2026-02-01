@@ -1,4 +1,6 @@
-# Kaggle Template
+# Predicting Heart Disease
+
+<img width="auto" src="https://www.kaggle.com/competitions/125192/images/header">
 
 ### Description
 
