@@ -1,6 +1,7 @@
 # Predicting Heart Disease
 
-<img width="auto" src="https://www.kaggle.com/competitions/125192/images/header">
+<img width="560" height="280" alt="image" src="https://github.com/user-attachments/assets/3571bea8-f527-4f47-a832-8d58e3bfd1f2" />
+
 
 ### Description
 
