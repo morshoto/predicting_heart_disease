@@ -5,6 +5,7 @@ description = "Starter template for Kaggle and ML competitions."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "ipykernel>=7.1.0",
     "kaggle>=1.7.4.5",
     "kagglehub>=0.4.2",
     "matplotlib>=3.10.8",
@@ -13,4 +14,5 @@ dependencies = [
     "scikit-learn>=1.7.2",
     "scipy>=1.15.3",
     "seaborn>=0.13.2",
+    "xgboost>=3.1.3",
 ]
