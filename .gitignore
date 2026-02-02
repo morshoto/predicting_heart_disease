@@ -1,3 +1,5 @@
+catboost_info/
+
 # Custom ignore
 pnpm-lock.yaml
 node_modules/
