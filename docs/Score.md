@@ -114,6 +114,13 @@
         <td><span>0.95364</span></td>
         <td class="detail-text"></td>
       </tr>
+       <tr>
+        <td class="model-name">007_catboost_features</td>
+        <td><span class="badge badge-blue">CatBoost</span></td>
+        <td class="eval-data">CV: 0.9562151715, Loss: </td>
+        <td><span>0.95351</span></td>
+        <td class="detail-text"></td>
+      </tr>
     </tbody>
   </table>
 </body>
