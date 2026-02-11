@@ -165,3 +165,37 @@ This is exemplified by the nearly identical fold AUCs for 'base' and 'rand_stren
 - Ranking:
 
 ---
+
+#### 2026/02/09
+
+**013_multiple-models-for-eda-lb-0-95371**
+
+| Title                                        | Author        | PL      | Link 🔗                                                                                                     |
+| -------------------------------------------- | ------------- | ------- | ----------------------------------------------------------------------------------------------------------- |
+| Multiple Models for ❤️ EDA 📊 LB: 0.95372 ⬆️ | Taimour Nazar | 0.95372 | [Link 🔗](https://www.kaggle.com/code/taimour/multiple-models-for-eda-lb-0-95372?scriptVersionId=296056995) |
+
+**Submission**
+
+- PL:
+- Ranking:
+
+---
+
+#### 2026/02/10
+
+**nb_download/predicting-heart-disease-kaggle-competition.ipynb**
+
+| Title                                         | Author        | PL      | Link 🔗                                                                                        |
+| --------------------------------------------- | ------------- | ------- | ---------------------------------------------------------------------------------------------- |
+| Predicting Heart Disease Predicte652          | Kamran Ahmed  | 0.95397 | [Link 🔗](https://www.kaggle.com/code/kami1976/predicting-heart-disease-predicte652)           |
+| RealMLP + Ext. Target Stats 5-Fold CV         | HARUKI HARADA | 0.95397 | [Link 🔗](https://www.kaggle.com/code/harukiharada/realmlp-ext-target-stats-5-fold-cv)         |
+| Predicting Heart Disease (Kaggle Competition) | Emran Albeik  | 0.95388 | [Link 🔗](https://www.kaggle.com/code/emranalbiek/predicting-heart-disease-kaggle-competition) |
+
+**nb/016_real-mlp.ipynb**:
+
+**Submission**
+
+- PL:
+- Ranking:
+
+---
