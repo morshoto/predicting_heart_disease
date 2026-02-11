@@ -12,18 +12,8 @@
 
 ## Type of change
 
-- [ ] 🐛: Bugfix
-- [ ] ✨: Feature
-- [ ] 💻: Code style update (formatting, local variables)
-- [ ] ♻️: Refactoring (no functional changes, no api changes)
-- [ ] 📝: Documentation content changes
-- [ ] 📊: EDA / exploratory analysis
-- [ ] 🧹: Data cleaning / preprocessing
+- [ ] 📊: Data cleaning / EDA / preprocessing
 - [ ] 🧪: Feature engineering
-- [ ] 🧠: Model training / new model
-- [ ] 🎛️: Hyperparameter tuning / optimization
-- [ ] 🧩: Ensembling / stacking / blending
+- [ ] 🧠: Model training / Hyperparameter tuning / Ensembling / stacking / blending
 - [ ] ✅: Validation / CV / evaluation changes
 - [ ] 🏁: Submission / score improvement
-- [ ] 🧱: Notebook refactor / reorganization
-- [ ] 🛠️: Other... Please describe:
