@@ -199,3 +199,13 @@ This is exemplified by the nearly identical fold AUCs for 'base' and 'rand_stren
 - Ranking:
 
 ---
+
+#### 2026/02/10
+
+**019_numeric_or_categorical**:
+
+- [Link🔗](https://github.com/morshoto/predicting_heart_disease/issues/1)
+- Run a baseline comparison where numeric features (age, BP, cholesterol, etc.) are kept continuous instead of being cast to categorical.
+- Base question: with all categorization, it did actually improved PB, but this is very skeptical. With numerical data, we have benefit of continuous values. So I want to test if categorization would actually improve or not
+
+---
