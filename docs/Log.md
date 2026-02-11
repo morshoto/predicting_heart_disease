@@ -1059,4 +1059,9 @@ param_grid["hidden_width"] = 128
 param_grid["n_hidden_layers"] = 2
 ```
 
+**nb/020_realmlp_hyperparameter_optimization.ipynb**
+
+- numeric
+- hyperparameter optimization
+
 ---
