@@ -1137,3 +1137,36 @@ INFO:pytorch_lightning.utilities.rank_zero:
 **nb/020_realmlp_hyperparameter_optimization.ipynb**
 
 ---
+
+#### 2026/02/13
+
+**025_real_hyperparameter**:
+
+| Approach              | Fold1   | Fold2   | Fold3   | Fold4   | Fold5   |
+| --------------------- | ------- | ------- | ------- | ------- | ------- |
+| NON-HPO (fixed param) | 0.95205 | 0.95070 | 0.95072 | 0.95170 | 0.95182 |
+| HPO                   | 0.95321 | 0.95222 | 0.95287 |
+
+> HPO improves score about +0.0015
+> Notebook running time has 30 minutes boost
+> Complicated
+
+![alt text](Calibration-Curve-Prediction-Distribution.png)
+
+Image 1 - Calibration-Curve-Prediction-Distribution
+
+Calibration is almost perfect, with prediction probabilities closely matching the actual positive rate. The prediction distribution is U-shaped, indicating that the model can confidently predict probabilities close to 0 or close to 1.
+
+Image 2 - ROC-Precision-Recall Curve
+
+Both ROC AUC = 0.9543 and AP = 0.9475 are at very high levels. The PR curve is also excellent, maintaining a precision of approximately 1.0 up to a recall of around 0.4.
+
+![alt text](ROC-Precision-Recall-Curve.png)
+
+Image 3 - Fold-wise AUC
+
+The variation between folds is very stable, falling within the range of 0.9539 to 0.9557. There is almost no deviation from the Mean line (dashed line), meaning there are no issues with specific folds being outliers.
+
+![alt text](Fold-wise-AUC.png)
+
+---
