@@ -1,4 +1,5 @@
 catboost_info/
+discussion/
 
 # Custom ignore
 pnpm-lock.yaml
