@@ -8,11 +8,13 @@ CLI for downloading Kaggle discussion threads to Markdown files.
 
 ## Usage
 
-Initialize `.env` file from `.env.example` file to read competition. From `scripts/get_discussion`:
+Initialize `.env` file from `.env.example` file to read competition. From repo root:
 
 ```bash
 # Single discussion
 go run ./cli/get_discussion --link "https://www.kaggle.com/discussion/12345"
+# Same command using the module import path
+go run github.com/shotomorisaki/predicting_heart_disease/cli/get_discussion --link "https://www.kaggle.com/discussion/12345"
 # Listing
 go run ./cli/get_discussion --sort hotness --time-filter last_7_days
 # Competition listing

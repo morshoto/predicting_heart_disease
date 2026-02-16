@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/url"
 
-	"predicting_heart_disease/scripts/get_discussion/internal/client"
-	"predicting_heart_disease/scripts/get_discussion/pkg/urlutil"
+	"github.com/shotomorisaki/predicting_heart_disease/cli/get_discussion/internal/client"
+	"github.com/shotomorisaki/predicting_heart_disease/cli/get_discussion/pkg/urlutil"
 )
 
 const (

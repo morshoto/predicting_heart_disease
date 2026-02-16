@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"predicting_heart_disease/scripts/get_discussion/internal/discussion"
+	"github.com/shotomorisaki/predicting_heart_disease/cli/get_discussion/internal/discussion"
 )
 
 func TestSlugifyTitle(t *testing.T) {

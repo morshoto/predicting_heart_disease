@@ -8,8 +8,8 @@ import (
 	"regexp"
 	"strings"
 
-	"predicting_heart_disease/scripts/get_discussion/internal/discussion"
-	"predicting_heart_disease/scripts/get_discussion/pkg/urlutil"
+	"github.com/shotomorisaki/predicting_heart_disease/cli/get_discussion/internal/discussion"
+	"github.com/shotomorisaki/predicting_heart_disease/cli/get_discussion/pkg/urlutil"
 )
 
 var slugRe = regexp.MustCompile(`[^a-z0-9_\-]+`)
