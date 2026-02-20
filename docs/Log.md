@@ -1170,3 +1170,65 @@ The variation between folds is very stable, falling within the range of 0.9539 t
 ![alt text](Fold-wise-AUC.png)
 
 ---
+
+#### 2026/02/16
+
+**028_real_hyperparameter_with_external_tata**
+
+- PB: 0.95307
+- CV: mean AUC 0.955691 (std 0.000444); OOF AUC 0.955664
+- OOF predictions saved to `oof_preds_train.csv`
+- Note: RealMLP treated all columns as categorical (no continuous columns inferred)
+
+---
+
+#### 2026/02/17
+
+**035-label-flipping**
+
+**Why we tried label flipping / conditional noise modeling**
+Many competitors hit a performance plateau around ~0.953 AUC. This suggests we’re close to the **Bayes error rate** for this dataset: even with the available features, there’s a limit to how well the classes can be separated.
+
+A key reason is **label noise that is not random**. There are samples where the clinical features strongly indicate “healthy,” yet the label is “disease,” and vice versa. This isn’t simple annotation error; it looks like **conditional noise** tied to specific feature patterns (clinical “edge cases” or contradictory signals).
+
+- PB: 0.95343
+- CV: mean AUC 0.955076 (std 0.000404); OOF AUC 0.954993
+- Note: baseline OOF + `noisy_flag` weighting -> `p_noise` -> regime + rank blend
+
+Label‑flipping experiments were about **modeling conditional noise and improving ordering**, not about achieving perfect classification on every ambiguous case. This aligns with how AUC is scored and helps push beyond the ~0.953 wall.
+
+---
+
+#### 2026/02/18
+
+**036_stacking_ensemble**
+
+- Base OOF AUCs: realmlp 0.955281, lgbm 0.954723, cat 0.955404
+- Rank stacking: best OOF AUC 0.955446 with weights realmlp 0.3313, lgbm 0.1033, cat 0.5654
+- Mean prob OOF AUC 0.955421
+
+---
+
+#### 2026/02/19
+
+**037_catboost_single_submit**
+
+- PB:0.95396
+- CV:0.955487
+- Note: submit only CatBoost
+- Saved artifacts: `036_cat_oof.csv`, `submission_cat.csv`
+
+**038_realmlp_single_submit**
+
+- PB: 0.95389
+- CV (ensemble): OOF AUC 0.955689
+- Seeds: 42 / 2024 / 2025 (single-model submission, RealMLP only)
+
+---
+
+#### 2026/02/20
+
+**039_catboost_realmlp_ensemble**
+
+- CatBoost OOF AUC: 0.955404
+- Saved artifacts: `036_cat_oof.csv`, `submission_cat.csv`
