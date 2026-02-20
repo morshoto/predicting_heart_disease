@@ -1151,7 +1151,7 @@ INFO:pytorch_lightning.utilities.rank_zero:
 > Notebook running time has 30 minutes boost
 > Complicated
 
-![alt text](Calibration-Curve-Prediction-Distribution.png)
+![alt text](img/Calibration-Curve-Prediction-Distribution.png)
 
 Image 1 - Calibration-Curve-Prediction-Distribution
 
@@ -1161,13 +1161,13 @@ Image 2 - ROC-Precision-Recall Curve
 
 Both ROC AUC = 0.9543 and AP = 0.9475 are at very high levels. The PR curve is also excellent, maintaining a precision of approximately 1.0 up to a recall of around 0.4.
 
-![alt text](ROC-Precision-Recall-Curve.png)
+![alt text](img/ROC-Precision-Recall-Curve.png)
 
 Image 3 - Fold-wise AUC
 
 The variation between folds is very stable, falling within the range of 0.9539 to 0.9557. There is almost no deviation from the Mean line (dashed line), meaning there are no issues with specific folds being outliers.
 
-![alt text](Fold-wise-AUC.png)
+![alt text](img/Fold-wise-AUC.png)
 
 ---
 
