@@ -50,7 +50,7 @@ func FetchCompetitionForumID(c *client.Client, competition string) (int, error) 
 	return *resp.ForumID, nil
 }
 
-func FetchTopicListByForumID(c *client.Client, forumID int, sortKey, timeKey string) ([]string, error) {
+func FetchTopicListByForumID(c *client.Client, forumID int, sortKey, timeKey string, limit int) ([]string, error) {
 	var allURLs []string
 	total := -1
 
@@ -92,6 +92,11 @@ func FetchTopicListByForumID(c *client.Client, forumID int, sortKey, timeKey str
 			if err == nil {
 				allURLs = append(allURLs, urlutil.CanonicalizeURL(abs.ResolveReference(ref).String()))
 			}
+		}
+
+		if limit > 0 && len(allURLs) >= limit {
+			allURLs = allURLs[:limit]
+			break
 		}
 
 		if total >= 0 && len(allURLs) >= total {
