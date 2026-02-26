@@ -1232,3 +1232,9 @@ Label‑flipping experiments were about **modeling conditional noise and improvi
 
 - CatBoost OOF AUC: 0.955404
 - Saved artifacts: `036_cat_oof.csv`, `submission_cat.csv`
+
+---
+
+#### 2026/02/22
+
+**043_ensemble_noise_modeling_v3**
