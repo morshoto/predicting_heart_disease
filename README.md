@@ -1,43 +1,57 @@
 # Predicting Heart Disease
 
+Kaggle Playground Series S6E2 — Heart Disease prediction experiments and baselines.
+
 <img width="560" height="280" alt="image" src="https://github.com/user-attachments/assets/3571bea8-f527-4f47-a832-8d58e3bfd1f2" />
 
+## Overview
 
-### Description
+- Goal: predict heart disease risk for the Kaggle Playground Series S6E2 competition.
+- Approach: tabular ML models with feature engineering and ensembling experiments.
+- Data sources: competition data plus optional external datasets referenced in notebooks.
+- Metric: ROC AUC (Kaggle leaderboard metric).
 
-Develop machine learning models to predict. The goal is to improve understanding.
+## Results
+
+| Model                        | CV AUC   | LB AUC  | Rank | Notes |
+| ---------------------------- | -------- | ------- | ---- | ----- |
+| Baseline (002_eda, ks_2samp) | 0.952922 | 0.95096 | TBD  | From `docs/Score.md` |
+| Ensemble (036_stacking_ensemble) | 0.955446 | TBD | TBD | OOF AUC from `docs/Log.md` |
+| Ensemble (038_realmlp_single_submit, multi-seed) | 0.955689 | TBD | TBD | OOF AUC from `docs/Log.md` |
+
+## Project Structure
 
 ```bash
-├── data           <---- Data directory
-├── docs           <---- Documents, logs,
-│   ├── Log.md     <---- Day tracking work
-│   ├── Paper.md   <---- Paper research
-│   └── Scoring.md <---- Score tracking table
-├── paper          <---- Papers to read, get inspired
-├── nb             <---- Created on jupyter notebook
-├── nb_download    <---- Public notebook from kaggle
-├── README.md
-├── requirements.txt
-├── scripts        <----Utility scripts
-├── src            <----Reusable code
-│   ├── cli        <----Minimal logic Command-line entry point to call pipelines
-│   ├── core       <----Shared config & utilities
-│   ├── data       <----Data I/O + preprocessing helpers
-│   ├── features   <----Feature engineering
-│   ├── models     <----Model implementations
-│   └── pipelines  <----Orchestration flows
+├── data           <---- Local data workspace
+├── docs           <---- Documentation and logs
+│   ├── Log.md
+│   ├── Paper.md
+│   └── Score.md
+├── paper          <---- Reference notes and ideas
+├── nb             <---- Author notebooks
+├── nb_download    <---- Public Kaggle notebooks (mirrors)
+├── cli            <---- Utility scripts
+├── src            <---- Reusable code
+│   ├── cli        <---- CLI entry points
+│   ├── core       <---- Shared config and utilities
+│   ├── data       <---- Data I/O and preprocessing
+│   ├── features   <---- Feature engineering
+│   ├── models     <---- Model implementations
+│   └── pipelines  <---- Orchestration flows
 ```
 
 ### Dataset
 
 The dataset provided for this competition consists of.
 
-| Name | Detail | Size | Link     |
-| ---- | ------ | ---- | -------- |
-| name |        |      | [Link]() |
+| Name                  | Detail                                                                                                                     | Size     | Link                                                                    |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------- | ----------------------------------------------------------------------- |
+| playground-series-s6e | The dataset for this competition was generated from a deep learning model trained on the Heart disease prediction dataset. | 45.43 MB | [Link](https://www.kaggle.com/competitions/playground-series-s6e2/data) |
 
-### Public Repo Safety
+## Docs and Notebooks
 
-- Keep Kaggle credentials in environment variables only (never commit tokens or `kaggle.json`).
-- Do not commit datasets or submissions (use `data/` as a local-only workspace).
-- Notebooks in this repo are output-stripped; re-run locally to reproduce results.
+- Setup guide: `docs/Setup.md`
+- Experiment log: `docs/Log.md`
+- Score tracking: `docs/Score.md`
+- Paper notes: `docs/Paper.md`
+- Notebooks: `nb/` (originals), `nb_download/` (public Kaggle notebooks)
