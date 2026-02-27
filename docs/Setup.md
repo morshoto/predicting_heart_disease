@@ -13,6 +13,12 @@ This document describes how to set up the environment and download Kaggle compet
 
 This project uses **kagglehub** for downloading competition data (recommended).
 
+### Public repository safety
+
+- Keep Kaggle credentials in environment variables only (never commit tokens or `kaggle.json`).
+- Do not commit datasets or submissions (use `data/` as a local-only workspace).
+- Notebooks in this repo are output-stripped; re-run locally to reproduce results.
+
 ### Create a Kaggle API token
 
 1. Go to your Kaggle Account settings page.

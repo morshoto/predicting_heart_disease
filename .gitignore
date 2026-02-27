@@ -4,6 +4,11 @@ discussion/
 # Custom ignore
 pnpm-lock.yaml
 node_modules/
+**/kaggle.json
+.kaggle/
+submission.csv
+*.zip
+*.parquet
 data/**
 !data/
 !data/**/

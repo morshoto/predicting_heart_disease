@@ -35,3 +35,9 @@ The dataset provided for this competition consists of.
 | Name | Detail | Size | Link     |
 | ---- | ------ | ---- | -------- |
 | name |        |      | [Link]() |
+
+### Public Repo Safety
+
+- Keep Kaggle credentials in environment variables only (never commit tokens or `kaggle.json`).
+- Do not commit datasets or submissions (use `data/` as a local-only workspace).
+- Notebooks in this repo are output-stripped; re-run locally to reproduce results.
