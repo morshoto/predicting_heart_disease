@@ -15,9 +15,9 @@ Kaggle Playground Series S6E2 — Heart Disease prediction experiments and basel
 
 | Model                        | CV AUC   | LB AUC  | Rank | Notes |
 | ---------------------------- | -------- | ------- | ---- | ----- |
-| Baseline (002_eda, ks_2samp) | 0.952922 | 0.95096 | TBD  | From `docs/Score.md` |
-| Ensemble (036_stacking_ensemble) | 0.955446 | TBD | TBD | OOF AUC from `docs/Log.md` |
-| Ensemble (038_realmlp_single_submit, multi-seed) | 0.955689 | TBD | TBD | OOF AUC from `docs/Log.md` |
+| Baseline (002_eda, ks_2samp) | 0.952922 | 0.95096 | -  | From `docs/Score.md` |
+| Ensemble (036_stacking_ensemble) | 0.955446 | - | - | OOF AUC from `docs/Log.md` |
+| Ensemble (038_realmlp_single_submit, multi-seed) | 0.955689 | - | - | OOF AUC from `docs/Log.md` |
 
 ## Project Structure
 
