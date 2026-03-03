@@ -6,18 +6,20 @@ Kaggle Playground Series S6E2 — Heart Disease prediction experiments and basel
 
 ## Overview
 
-- Goal: predict heart disease risk for the Kaggle Playground Series S6E2 competition.
+- Predict heart disease risk for the Kaggle Playground Series S6E2 competition.
 - Approach: tabular ML models with feature engineering and ensembling experiments.
-- Data sources: competition data plus optional external datasets referenced in notebooks.
-- Metric: ROC AUC (Kaggle leaderboard metric).
+- Data sources are competition data plus optional external datasets referenced in notebooks.
+- Metric: ROC AUC Kaggle leaderboard metric
+- Ranked top 2% (105/4,507 Participants)
+
+
 
 ## Results
 
 | Model                        | CV AUC   | LB AUC  | Rank | Notes |
 | ---------------------------- | -------- | ------- | ---- | ----- |
-| Baseline (002_eda, ks_2samp) | 0.952922 | 0.95096 | -  | From `docs/Score.md` |
-| Ensemble (036_stacking_ensemble) | 0.955446 | - | - | OOF AUC from `docs/Log.md` |
-| Ensemble (038_realmlp_single_submit, multi-seed) | 0.955689 | - | - | OOF AUC from `docs/Log.md` |
+| Public | 0.952922 | 0.95406 | 210  | - |
+| Private | 0.955446 | 0.95530 | 105 | nb/051_ensemble_v2_wall_breaker.ipynb |
 
 ## Project Structure
 
